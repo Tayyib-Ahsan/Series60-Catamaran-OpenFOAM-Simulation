@@ -1,0 +1,781 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _f8e05934-20230403 OPENFOAM=2212 patch=230110 version=2212
+Arch   : "LSB;label=32;scalar=64"
+Exec   : redistributePar -parallel -reconstruct
+Date   : Jul 04 2024
+Time   : 01:25:06
+Host   : DESKTOP-K8TIARQ
+PID    : 10803
+I/O    : uncollated
+Case   : /home/name/CarBattery/S60_M_0.30_New
+nProcs : 12
+Hosts  :
+(
+    (DESKTOP-K8TIARQ 12)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+sigFpe : Disabling floating point exception trapping
+Reconstructing case (like reconstructParMesh)
+
+--> FOAM Warning : 
+    From int main(int, char**)
+    in file redistributePar.C at line 1147
+    Working in -decompose or -reconstruct mode: automatically implies -overwrite
+
+Create time
+
+Create undecomposed database
+
+
+Reconstructing mesh and addressing
+
+
+Reconstructing mesh 
+
+Time = 10
+
+Per processor availability of "faces" file in "constant/polyMesh"
+    (1 1 1 1 1 1 1 1 1 1 1 1)
+
+Per processor availability of "faceLabels" file in "constant/faMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Checking "S60_M_0.30_New" for undecomposed volume and area meshes...
+    volume mesh [1] : "constant"
+    area   mesh [0] : "constant"
+
+Time = 20
+
+Per processor availability of "faces" file in "constant/polyMesh"
+    (1 1 1 1 1 1 1 1 1 1 1 1)
+
+Per processor availability of "faceLabels" file in "constant/faMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Checking "S60_M_0.30_New" for undecomposed volume and area meshes...
+    volume mesh [1] : "constant"
+    area   mesh [0] : "constant"
+
+Time = 30
+
+Per processor availability of "faces" file in "constant/polyMesh"
+    (1 1 1 1 1 1 1 1 1 1 1 1)
+
+Per processor availability of "faceLabels" file in "constant/faMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Checking "S60_M_0.30_New" for undecomposed volume and area meshes...
+    volume mesh [1] : "constant"
+    area   mesh [0] : "constant"
+
+Time = 40
+
+Per processor availability of "faces" file in "constant/polyMesh"
+    (1 1 1 1 1 1 1 1 1 1 1 1)
+
+Per processor availability of "faceLabels" file in "constant/faMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Checking "S60_M_0.30_New" for undecomposed volume and area meshes...
+    volume mesh [1] : "constant"
+    area   mesh [0] : "constant"
+
+Time = 50
+
+Per processor availability of "faces" file in "constant/polyMesh"
+    (1 1 1 1 1 1 1 1 1 1 1 1)
+
+Per processor availability of "faceLabels" file in "constant/faMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Checking "S60_M_0.30_New" for undecomposed volume and area meshes...
+    volume mesh [1] : "constant"
+    area   mesh [0] : "constant"
+
+Time = 60
+
+Per processor availability of "faces" file in "constant/polyMesh"
+    (1 1 1 1 1 1 1 1 1 1 1 1)
+
+Per processor availability of "faceLabels" file in "constant/faMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Checking "S60_M_0.30_New" for undecomposed volume and area meshes...
+    volume mesh [1] : "constant"
+    area   mesh [0] : "constant"
+
+Time = 70
+
+Per processor availability of "faces" file in "constant/polyMesh"
+    (1 1 1 1 1 1 1 1 1 1 1 1)
+
+Per processor availability of "faceLabels" file in "constant/faMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Checking "S60_M_0.30_New" for undecomposed volume and area meshes...
+    volume mesh [1] : "constant"
+    area   mesh [0] : "constant"
+
+Time = 80
+
+Per processor availability of "faces" file in "constant/polyMesh"
+    (1 1 1 1 1 1 1 1 1 1 1 1)
+
+Per processor availability of "faceLabels" file in "constant/faMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Checking "S60_M_0.30_New" for undecomposed volume and area meshes...
+    volume mesh [1] : "constant"
+    area   mesh [0] : "constant"
+
+Time = 90
+
+Per processor availability of "faces" file in "constant/polyMesh"
+    (1 1 1 1 1 1 1 1 1 1 1 1)
+
+Per processor availability of "faceLabels" file in "constant/faMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Checking "S60_M_0.30_New" for undecomposed volume and area meshes...
+    volume mesh [1] : "constant"
+    area   mesh [0] : "constant"
+
+Time = 100
+
+Per processor availability of "faces" file in "constant/polyMesh"
+    (1 1 1 1 1 1 1 1 1 1 1 1)
+
+Per processor availability of "faceLabels" file in "constant/faMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Checking "S60_M_0.30_New" for undecomposed volume and area meshes...
+    volume mesh [1] : "constant"
+    area   mesh [0] : "constant"
+
+Time = 110
+
+Per processor availability of "faces" file in "constant/polyMesh"
+    (1 1 1 1 1 1 1 1 1 1 1 1)
+
+Per processor availability of "faceLabels" file in "constant/faMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Checking "S60_M_0.30_New" for undecomposed volume and area meshes...
+    volume mesh [1] : "constant"
+    area   mesh [0] : "constant"
+
+Time = 120
+
+Per processor availability of "faces" file in "constant/polyMesh"
+    (1 1 1 1 1 1 1 1 1 1 1 1)
+
+Per processor availability of "faceLabels" file in "constant/faMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Checking "S60_M_0.30_New" for undecomposed volume and area meshes...
+    volume mesh [1] : "constant"
+    area   mesh [0] : "constant"
+
+Time = 130
+
+Per processor availability of "faces" file in "constant/polyMesh"
+    (1 1 1 1 1 1 1 1 1 1 1 1)
+
+Per processor availability of "faceLabels" file in "constant/faMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Checking "S60_M_0.30_New" for undecomposed volume and area meshes...
+    volume mesh [1] : "constant"
+    area   mesh [0] : "constant"
+
+Time = 140
+
+Per processor availability of "faces" file in "constant/polyMesh"
+    (1 1 1 1 1 1 1 1 1 1 1 1)
+
+Per processor availability of "faceLabels" file in "constant/faMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Checking "S60_M_0.30_New" for undecomposed volume and area meshes...
+    volume mesh [1] : "constant"
+    area   mesh [0] : "constant"
+
+Time = 150
+
+Per processor availability of "faces" file in "constant/polyMesh"
+    (1 1 1 1 1 1 1 1 1 1 1 1)
+
+Per processor availability of "faceLabels" file in "constant/faMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Checking "S60_M_0.30_New" for undecomposed volume and area meshes...
+    volume mesh [1] : "constant"
+    area   mesh [0] : "constant"
+
+Time = 160
+
+Per processor availability of "faces" file in "constant/polyMesh"
+    (1 1 1 1 1 1 1 1 1 1 1 1)
+
+Per processor availability of "faceLabels" file in "constant/faMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Checking "S60_M_0.30_New" for undecomposed volume and area meshes...
+    volume mesh [1] : "constant"
+    area   mesh [0] : "constant"
+
+Time = 170
+
+Per processor availability of "faces" file in "constant/polyMesh"
+    (1 1 1 1 1 1 1 1 1 1 1 1)
+
+Per processor availability of "faceLabels" file in "constant/faMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Checking "S60_M_0.30_New" for undecomposed volume and area meshes...
+    volume mesh [1] : "constant"
+    area   mesh [0] : "constant"
+
+Time = 180
+
+Per processor availability of "faces" file in "constant/polyMesh"
+    (1 1 1 1 1 1 1 1 1 1 1 1)
+
+Per processor availability of "faceLabels" file in "constant/faMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Checking "S60_M_0.30_New" for undecomposed volume and area meshes...
+    volume mesh [1] : "constant"
+    area   mesh [0] : "constant"
+
+Time = 190
+
+Per processor availability of "faces" file in "constant/polyMesh"
+    (1 1 1 1 1 1 1 1 1 1 1 1)
+
+Per processor availability of "faceLabels" file in "constant/faMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Checking "S60_M_0.30_New" for undecomposed volume and area meshes...
+    volume mesh [1] : "constant"
+    area   mesh [0] : "constant"
+
+Time = 200
+
+Per processor availability of "faces" file in "constant/polyMesh"
+    (1 1 1 1 1 1 1 1 1 1 1 1)
+
+Per processor availability of "faceLabels" file in "constant/faMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Checking "S60_M_0.30_New" for undecomposed volume and area meshes...
+    volume mesh [1] : "constant"
+    area   mesh [0] : "constant"
+
+
+Reconstructing fields
+
+Time = 10
+
+Reading undecomposed mesh (on master)
+Reading local, decomposed mesh
+Reading (cell|face|point|boundary)ProcAddressing from constant/polyMesh
+
+Time = 10
+
+    Reconstructing volScalarFields
+
+        alpha.water
+        k
+        nut
+        omega
+        p
+        p_rgh
+        rDeltaT
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        alphaPhi0.water
+        phi
+
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/10/uniform"
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/10/uniform"
+Time = 20
+
+    Reconstructing volScalarFields
+
+        alpha.water
+        k
+        nut
+        omega
+        p
+        p_rgh
+        rDeltaT
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        alphaPhi0.water
+        phi
+
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/20/uniform"
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/20/uniform"
+Time = 30
+
+    Reconstructing volScalarFields
+
+        alpha.water
+        k
+        nut
+        omega
+        p
+        p_rgh
+        rDeltaT
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        alphaPhi0.water
+        phi
+
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/30/uniform"
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/30/uniform"
+Time = 40
+
+    Reconstructing volScalarFields
+
+        alpha.water
+        k
+        nut
+        omega
+        p
+        p_rgh
+        rDeltaT
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        alphaPhi0.water
+        phi
+
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/40/uniform"
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/40/uniform"
+Time = 50
+
+    Reconstructing volScalarFields
+
+        alpha.water
+        k
+        nut
+        omega
+        p
+        p_rgh
+        rDeltaT
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        alphaPhi0.water
+        phi
+
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/50/uniform"
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/50/uniform"
+Time = 60
+
+    Reconstructing volScalarFields
+
+        alpha.water
+        k
+        nut
+        omega
+        p
+        p_rgh
+        rDeltaT
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        alphaPhi0.water
+        phi
+
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/60/uniform"
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/60/uniform"
+Time = 70
+
+    Reconstructing volScalarFields
+
+        alpha.water
+        k
+        nut
+        omega
+        p
+        p_rgh
+        rDeltaT
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        alphaPhi0.water
+        phi
+
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/70/uniform"
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/70/uniform"
+Time = 80
+
+    Reconstructing volScalarFields
+
+        alpha.water
+        k
+        nut
+        omega
+        p
+        p_rgh
+        rDeltaT
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        alphaPhi0.water
+        phi
+
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/80/uniform"
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/80/uniform"
+Time = 90
+
+    Reconstructing volScalarFields
+
+        alpha.water
+        k
+        nut
+        omega
+        p
+        p_rgh
+        rDeltaT
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        alphaPhi0.water
+        phi
+
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/90/uniform"
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/90/uniform"
+Time = 100
+
+    Reconstructing volScalarFields
+
+        alpha.water
+        k
+        nut
+        omega
+        p
+        p_rgh
+        rDeltaT
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        alphaPhi0.water
+        phi
+
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/100/uniform"
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/100/uniform"
+Time = 110
+
+    Reconstructing volScalarFields
+
+        alpha.water
+        k
+        nut
+        omega
+        p
+        p_rgh
+        rDeltaT
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        alphaPhi0.water
+        phi
+
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/110/uniform"
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/110/uniform"
+Time = 120
+
+    Reconstructing volScalarFields
+
+        alpha.water
+        k
+        nut
+        omega
+        p
+        p_rgh
+        rDeltaT
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        alphaPhi0.water
+        phi
+
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/120/uniform"
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/120/uniform"
+Time = 130
+
+    Reconstructing volScalarFields
+
+        alpha.water
+        k
+        nut
+        omega
+        p
+        p_rgh
+        rDeltaT
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        alphaPhi0.water
+        phi
+
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/130/uniform"
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/130/uniform"
+Time = 140
+
+    Reconstructing volScalarFields
+
+        alpha.water
+        k
+        nut
+        omega
+        p
+        p_rgh
+        rDeltaT
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        alphaPhi0.water
+        phi
+
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/140/uniform"
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/140/uniform"
+Time = 150
+
+    Reconstructing volScalarFields
+
+        alpha.water
+        k
+        nut
+        omega
+        p
+        p_rgh
+        rDeltaT
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        alphaPhi0.water
+        phi
+
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/150/uniform"
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/150/uniform"
+Time = 160
+
+    Reconstructing volScalarFields
+
+        alpha.water
+        k
+        nut
+        omega
+        p
+        p_rgh
+        rDeltaT
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        alphaPhi0.water
+        phi
+
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/160/uniform"
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/160/uniform"
+Time = 170
+
+    Reconstructing volScalarFields
+
+        alpha.water
+        k
+        nut
+        omega
+        p
+        p_rgh
+        rDeltaT
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        alphaPhi0.water
+        phi
+
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/170/uniform"
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/170/uniform"
+Time = 180
+
+    Reconstructing volScalarFields
+
+        alpha.water
+        k
+        nut
+        omega
+        p
+        p_rgh
+        rDeltaT
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        alphaPhi0.water
+        phi
+
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/180/uniform"
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/180/uniform"
+Time = 190
+
+    Reconstructing volScalarFields
+
+        alpha.water
+        k
+        nut
+        omega
+        p
+        p_rgh
+        rDeltaT
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        alphaPhi0.water
+        phi
+
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/190/uniform"
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/190/uniform"
+Time = 200
+
+    Reconstructing volScalarFields
+
+        alpha.water
+        k
+        nut
+        omega
+        p
+        p_rgh
+        rDeltaT
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        alphaPhi0.water
+        phi
+
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/200/uniform"
+Detected additional non-decomposed files in "/home/name/CarBattery/S60_M_0.30_New/processor0/200/uniform"
+End
+
+Finalising parallel run

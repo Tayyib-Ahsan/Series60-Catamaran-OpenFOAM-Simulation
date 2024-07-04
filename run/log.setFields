@@ -1,0 +1,52 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _f8e05934-20230403 OPENFOAM=2212 patch=230110 version=2212
+Arch   : "LSB;label=32;scalar=64"
+Exec   : setFields
+Date   : Jul 02 2024
+Time   : 22:38:25
+Host   : DESKTOP-K8TIARQ
+PID    : 10660
+I/O    : uncollated
+Case   : /home/name/CarBattery/S60_M_0.30_New
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Reading setFieldsDict
+
+Setting volume field default values
+    - set internal values of volScalarField: alpha.water = 0
+
+Setting field region values
+
+    Adding cells with centre within boxes 1((-999 -999 -999) (999 999 0.133))
+    Selected 1070921/2221367 cells
+    - set internal values of volScalarField: alpha.water = 1
+    Adding faces with centre within boxes 1((-999 -999 -999) (999 999 0.133))
+    Selected 3355075 faces
+    - set boundary values of volScalarField: alpha.water = 1
+--> FOAM Warning : 
+    From bool setFaceFieldType(const fieldDescription&, const Foam::fvMesh&, const labelList&, Foam::Istream&) [with Type = double; Foam::labelList = Foam::List<int>]
+    in file setFields.C at line 377
+    Ignoring internal face 0. Suppressing further warnings.
+    On patch inlet set 848 values
+    On patch outlet set 848 values
+    On patch bottom set 480 values
+    On patch side set 1590 values
+    On patch midPlane set 9902 values
+    On patch hull set 91228 values
+
+End
+

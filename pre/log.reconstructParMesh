@@ -1,0 +1,154 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _f8e05934-20230403 OPENFOAM=2212 patch=230110 version=2212
+Arch   : "LSB;label=32;scalar=64"
+Exec   : reconstructParMesh -constant -mergeTol 1E-06
+Date   : Jul 02 2024
+Time   : 22:38:10
+Host   : DESKTOP-K8TIARQ
+PID    : 10652
+I/O    : uncollated
+Case   : /home/name/CarBattery/S60_M_0.30_New
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Merge individual processor meshes back into one master mesh.
+Use if the original master mesh has been deleted or the processor meshes
+have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge assuming correct, fully matched procBoundaries.
+
+Found 12 processor directories
+    Reading database "S60_M_0.30_New/processor0"
+    Reading database "S60_M_0.30_New/processor1"
+    Reading database "S60_M_0.30_New/processor2"
+    Reading database "S60_M_0.30_New/processor3"
+    Reading database "S60_M_0.30_New/processor4"
+    Reading database "S60_M_0.30_New/processor5"
+    Reading database "S60_M_0.30_New/processor6"
+    Reading database "S60_M_0.30_New/processor7"
+    Reading database "S60_M_0.30_New/processor8"
+    Reading database "S60_M_0.30_New/processor9"
+    Reading database "S60_M_0.30_New/processor10"
+    Reading database "S60_M_0.30_New/processor11"
+
+Time = constant
+
+
+Writing merged mesh to "constant/polyMesh"
+
+Reconstructing addressing from processor meshes to the newly reconstructed mesh
+
+Processor 0
+Read processor mesh: "S60_M_0.30_New/processor0"
+Writing addressing : "S60_M_0.30_New/processor0/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 1
+Read processor mesh: "S60_M_0.30_New/processor1"
+Writing addressing : "S60_M_0.30_New/processor1/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 2
+Read processor mesh: "S60_M_0.30_New/processor2"
+Writing addressing : "S60_M_0.30_New/processor2/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 3
+Read processor mesh: "S60_M_0.30_New/processor3"
+Writing addressing : "S60_M_0.30_New/processor3/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 4
+Read processor mesh: "S60_M_0.30_New/processor4"
+Writing addressing : "S60_M_0.30_New/processor4/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 5
+Read processor mesh: "S60_M_0.30_New/processor5"
+Writing addressing : "S60_M_0.30_New/processor5/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 6
+Read processor mesh: "S60_M_0.30_New/processor6"
+Writing addressing : "S60_M_0.30_New/processor6/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 7
+Read processor mesh: "S60_M_0.30_New/processor7"
+Writing addressing : "S60_M_0.30_New/processor7/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 8
+Read processor mesh: "S60_M_0.30_New/processor8"
+Writing addressing : "S60_M_0.30_New/processor8/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 9
+Read processor mesh: "S60_M_0.30_New/processor9"
+Writing addressing : "S60_M_0.30_New/processor9/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 10
+Read processor mesh: "S60_M_0.30_New/processor10"
+Writing addressing : "S60_M_0.30_New/processor10/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+Processor 11
+Read processor mesh: "S60_M_0.30_New/processor11"
+Writing addressing : "S60_M_0.30_New/processor11/constant/polyMesh"
+    pointProcAddressing
+    faceProcAddressing
+    cellProcAddressing
+    boundaryProcAddressing
+
+End
+

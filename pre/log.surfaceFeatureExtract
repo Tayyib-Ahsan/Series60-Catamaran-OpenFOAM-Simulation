@@ -1,0 +1,85 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _f8e05934-20230403 OPENFOAM=2212 patch=230110 version=2212
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceFeatureExtract
+Date   : Jul 02 2024
+Time   : 21:43:44
+Host   : DESKTOP-K8TIARQ
+PID    : 10505
+I/O    : uncollated
+Case   : /home/name/CarBattery/S60_M_0.30_New
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+Note: Feature line extraction only valid on closed manifold surfaces
+
+Reading surfaceFeatureExtractDict
+
+Surfaces     : hull.stl
+Output       : hull
+Load options : offset
+Write options: writeObj=yes writeVTK=off
+
+Statistics:
+Triangles    : 18764 in 1 region(s)
+Vertices     : 9384
+Bounding Box : (-0.0928877 -0.652247 -2.01458e-08) (2.53993 -0.318753 0.265)
+
+Constructing feature set from included angle 180
+Selecting edges based purely on geometric tests: no
+
+Initial Feature set:
+    points : 9384
+    edges  : 28146
+    of which
+        region edges   : 0
+        external edges : 13963
+        internal edges : 14183
+
+Final Feature set:
+    points : 9384
+    of which
+        convex             : 200
+        concave            : 34
+        mixed              : 9150
+        non-feature        : 0
+    edges  : 28146
+    of which
+        external edges     : 11027
+        internal edges     : 6311
+        flat edges         : 10808
+        open edges         : 0
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/name/CarBattery/S60_M_0.30_New/constant/extendedFeatureEdgeMesh/hull.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/name/CarBattery/S60_M_0.30_New/constant/extendedFeatureEdgeMesh/hull"
+Writing 200 convex feature points to "/home/name/CarBattery/S60_M_0.30_New/constant/extendedFeatureEdgeMesh/hull_convexFeaturePts.obj"
+Writing 34 concave feature points to "/home/name/CarBattery/S60_M_0.30_New/constant/extendedFeatureEdgeMesh/hull_concaveFeaturePts.obj"
+Writing 9150 mixed feature points to "/home/name/CarBattery/S60_M_0.30_New/constant/extendedFeatureEdgeMesh/hull_mixedFeaturePts.obj"
+Writing 9150 mixed feature point structure to "/home/name/CarBattery/S60_M_0.30_New/constant/extendedFeatureEdgeMesh/hull_mixedFeaturePtsStructure.obj"
+Writing 11027 external edges to "/home/name/CarBattery/S60_M_0.30_New/constant/extendedFeatureEdgeMesh/hull_externalEdges.obj"
+Writing 6311 internal edges to "/home/name/CarBattery/S60_M_0.30_New/constant/extendedFeatureEdgeMesh/hull_internalEdges.obj"
+Writing 10808 flat edges to "/home/name/CarBattery/S60_M_0.30_New/constant/extendedFeatureEdgeMesh/hull_flatEdges.obj"
+Writing 0 open edges to "/home/name/CarBattery/S60_M_0.30_New/constant/extendedFeatureEdgeMesh/hull_openEdges.obj"
+Writing 0 multiple edges to "/home/name/CarBattery/S60_M_0.30_New/constant/extendedFeatureEdgeMesh/hull_multipleEdges.obj"
+Writing 0 region edges to "/home/name/CarBattery/S60_M_0.30_New/constant/extendedFeatureEdgeMesh/hull_regionEdges.obj"
+Writing 28146 edge directions to "/home/name/CarBattery/S60_M_0.30_New/constant/extendedFeatureEdgeMesh/hull_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/name/CarBattery/S60_M_0.30_New/constant/triSurface/hull.eMesh"
+ExecutionTime = 0.5 s  ClockTime = 1 s
+
+End
+

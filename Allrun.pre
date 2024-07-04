@@ -1,0 +1,32 @@
+#!/bin/sh
+cd "${0%/*}" || exit                                # Run from this directory
+. ${WM_PROJECT_DIR:?}/bin/tools/RunFunctions        # Tutorial run functions
+#------------------------------------------------------------------------------
+
+
+runApplication surfaceFeatureExtract
+runApplication blockMesh
+
+for i in 1 2 3 4 5 
+do
+    runApplication -s "$i" \
+       topoSet -dict system/topoSetDict.${i}
+
+    runApplication -s "$i" \
+        refineMesh -dict system/refineMeshDict -overwrite
+done
+
+runParallel -s decompose redistributePar -decompose
+runParallel renumberMesh -overwrite
+runParallel snappyHexMesh -overwrite
+runApplication reconstructParMesh -constant -mergeTol 1E-06
+runApplication checkMesh
+
+rm -r 0
+rm -r processor*
+mkdir pre
+mv log* pre
+
+#------------------------------------------------------------------------------
+
+

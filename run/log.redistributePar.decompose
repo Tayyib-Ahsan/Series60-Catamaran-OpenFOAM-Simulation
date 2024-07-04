@@ -1,0 +1,402 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _f8e05934-20230403 OPENFOAM=2212 patch=230110 version=2212
+Arch   : "LSB;label=32;scalar=64"
+Exec   : redistributePar -parallel -decompose
+Date   : Jul 02 2024
+Time   : 22:38:27
+Host   : DESKTOP-K8TIARQ
+PID    : 10668
+I/O    : uncollated
+Case   : /home/name/CarBattery/S60_M_0.30_New
+nProcs : 12
+Hosts  :
+(
+    (DESKTOP-K8TIARQ 12)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+sigFpe : Disabling floating point exception trapping
+Decomposing case (like decomposePar)
+
+--> FOAM Warning : 
+    From int main(int, char**)
+    in file redistributePar.C at line 1147
+    Working in -decompose or -reconstruct mode: automatically implies -overwrite
+
+No processor directories; switching on decompose mode
+
+Creating time directories on all processors
+
+Create time
+
+Create undecomposed database
+
+Setting time to that of master or undecomposed case : 0
+
+
+Decomposing mesh 
+
+Checking undecomposed mesh in case: "S60_M_0.30_New"
+    volume mesh [1] : "constant"
+    area   mesh [0] : "constant"
+
+
+Per processor availability of "faces" file in "constant/polyMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Per processor availability of "faceLabels" file in "constant/faMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Setting caseName to "S60_M_0.30_New" to read undecomposed mesh
+Restoring caseName
+Decomposition method hierarchical [12] (region region0)
+Setting caseName to "S60_M_0.30_New" to read decomposeParDict
+Restoring caseName
+--> FOAM Warning : 
+    From bool Foam::IOobject::readHeader(Foam::dictionary&, Foam::Istream&)
+    in file db/IOobject/IOobjectReadHeader.C at line 116
+    Reading "0/alpha.water:Zone.Identifier" at line 1
+    First token could not be read or is not 'FoamFile'
+
+Check header is of the form:
+
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       IOobject;
+    location    "0";
+    object      alpha.water:Zone.Identifier;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+--> FOAM Warning : 
+    From bool Foam::IOobject::readHeader(Foam::dictionary&, Foam::Istream&)
+    in file db/IOobject/IOobjectReadHeader.C at line 116
+    Reading "0/p_rgh:Zone.Identifier" at line 1
+    First token could not be read or is not 'FoamFile'
+
+Check header is of the form:
+
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       IOobject;
+    location    "0";
+    object      p_rgh:Zone.Identifier;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+--> FOAM Warning : 
+    From bool Foam::IOobject::readHeader(Foam::dictionary&, Foam::Istream&)
+    in file db/IOobject/IOobjectReadHeader.C at line 116
+    Reading "0/omega:Zone.Identifier" at line 1
+    First token could not be read or is not 'FoamFile'
+
+Check header is of the form:
+
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       IOobject;
+    location    "0";
+    object      omega:Zone.Identifier;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+--> FOAM Warning : 
+    From bool Foam::IOobject::readHeader(Foam::dictionary&, Foam::Istream&)
+    in file db/IOobject/IOobjectReadHeader.C at line 116
+    Reading "0/U:Zone.Identifier" at line 1
+    First token could not be read or is not 'FoamFile'
+
+Check header is of the form:
+
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       IOobject;
+    location    "0";
+    object      U:Zone.Identifier;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+--> FOAM Warning : 
+    From bool Foam::IOobject::readHeader(Foam::dictionary&, Foam::Istream&)
+    in file db/IOobject/IOobjectReadHeader.C at line 116
+    Reading "0/pointDisplacement:Zone.Identifier" at line 1
+    First token could not be read or is not 'FoamFile'
+
+Check header is of the form:
+
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       IOobject;
+    location    "0";
+    object      pointDisplacement:Zone.Identifier;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+--> FOAM Warning : 
+    From bool Foam::IOobject::readHeader(Foam::dictionary&, Foam::Istream&)
+    in file db/IOobject/IOobjectReadHeader.C at line 116
+    Reading "0/k:Zone.Identifier" at line 1
+    First token could not be read or is not 'FoamFile'
+
+Check header is of the form:
+
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       IOobject;
+    location    "0";
+    object      k:Zone.Identifier;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+--> FOAM Warning : 
+    From bool Foam::IOobject::readHeader(Foam::dictionary&, Foam::Istream&)
+    in file db/IOobject/IOobjectReadHeader.C at line 116
+    Reading "0/nut:Zone.Identifier" at line 1
+    First token could not be read or is not 'FoamFile'
+
+Check header is of the form:
+
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       IOobject;
+    location    "0";
+    object      nut:Zone.Identifier;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+From time 0 mesh:"constant/region0" have objects:7(nut alpha.water pointDisplacement U k p_rgh omega)
+After distribution:
+
+Processor 0
+    Number of cells = 185234
+    Number of faces shared with processor 1 = 2502
+    Number of faces shared with processor 2 = 7149
+    Number of faces shared with processor 4 = 6843
+    Number of faces shared with processor 6 = 39
+    Number of processor patches = 4
+    Number of processor faces = 16533
+    Number of boundary faces = 10253
+
+Processor 1
+    Number of cells = 185078
+    Number of faces shared with processor 0 = 2502
+    Number of faces shared with processor 2 = 76
+    Number of faces shared with processor 3 = 5940
+    Number of faces shared with processor 4 = 37
+    Number of faces shared with processor 5 = 6289
+    Number of faces shared with processor 7 = 23
+    Number of processor patches = 6
+    Number of processor faces = 14867
+    Number of boundary faces = 16072
+
+Processor 2
+    Number of cells = 185214
+    Number of faces shared with processor 0 = 7149
+    Number of faces shared with processor 1 = 76
+    Number of faces shared with processor 3 = 1208
+    Number of faces shared with processor 4 = 4
+    Number of faces shared with processor 6 = 6309
+    Number of processor patches = 5
+    Number of processor faces = 14746
+    Number of boundary faces = 21308
+
+Processor 3
+    Number of cells = 184968
+    Number of faces shared with processor 1 = 5940
+    Number of faces shared with processor 2 = 1208
+    Number of faces shared with processor 5 = 1
+    Number of faces shared with processor 6 = 31
+    Number of faces shared with processor 7 = 5632
+    Number of processor patches = 5
+    Number of processor faces = 12812
+    Number of boundary faces = 22116
+
+Processor 4
+    Number of cells = 185079
+    Number of faces shared with processor 0 = 6843
+    Number of faces shared with processor 1 = 37
+    Number of faces shared with processor 2 = 4
+    Number of faces shared with processor 5 = 1418
+    Number of faces shared with processor 6 = 3330
+    Number of faces shared with processor 8 = 6920
+    Number of faces shared with processor 9 = 49
+    Number of faces shared with processor 10 = 13
+    Number of processor patches = 8
+    Number of processor faces = 18614
+    Number of boundary faces = 15798
+
+Processor 5
+    Number of cells = 185054
+    Number of faces shared with processor 1 = 6289
+    Number of faces shared with processor 3 = 1
+    Number of faces shared with processor 4 = 1418
+    Number of faces shared with processor 7 = 2591
+    Number of faces shared with processor 9 = 6653
+    Number of faces shared with processor 11 = 61
+    Number of processor patches = 6
+    Number of processor faces = 17013
+    Number of boundary faces = 18529
+
+Processor 6
+    Number of cells = 184943
+    Number of faces shared with processor 0 = 39
+    Number of faces shared with processor 2 = 6309
+    Number of faces shared with processor 3 = 31
+    Number of faces shared with processor 4 = 3330
+    Number of faces shared with processor 7 = 777
+    Number of faces shared with processor 8 = 2
+    Number of faces shared with processor 10 = 5889
+    Number of faces shared with processor 11 = 48
+    Number of processor patches = 8
+    Number of processor faces = 16425
+    Number of boundary faces = 22050
+
+Processor 7
+    Number of cells = 185079
+    Number of faces shared with processor 1 = 23
+    Number of faces shared with processor 3 = 5632
+    Number of faces shared with processor 5 = 2591
+    Number of faces shared with processor 6 = 777
+    Number of faces shared with processor 11 = 5859
+    Number of processor patches = 5
+    Number of processor faces = 14882
+    Number of boundary faces = 22502
+
+Processor 8
+    Number of cells = 185116
+    Number of faces shared with processor 4 = 6920
+    Number of faces shared with processor 6 = 2
+    Number of faces shared with processor 9 = 2166
+    Number of faces shared with processor 10 = 6184
+    Number of processor patches = 4
+    Number of processor faces = 15272
+    Number of boundary faces = 14586
+
+Processor 9
+    Number of cells = 185101
+    Number of faces shared with processor 4 = 49
+    Number of faces shared with processor 5 = 6653
+    Number of faces shared with processor 8 = 2166
+    Number of faces shared with processor 10 = 71
+    Number of faces shared with processor 11 = 5006
+    Number of processor patches = 5
+    Number of processor faces = 13945
+    Number of boundary faces = 18456
+
+Processor 10
+    Number of cells = 185203
+    Number of faces shared with processor 4 = 13
+    Number of faces shared with processor 6 = 5889
+    Number of faces shared with processor 8 = 6184
+    Number of faces shared with processor 9 = 71
+    Number of faces shared with processor 11 = 1050
+    Number of processor patches = 5
+    Number of processor faces = 13207
+    Number of boundary faces = 23130
+
+Processor 11
+    Number of cells = 185298
+    Number of faces shared with processor 5 = 61
+    Number of faces shared with processor 6 = 48
+    Number of faces shared with processor 7 = 5859
+    Number of faces shared with processor 9 = 5006
+    Number of faces shared with processor 10 = 1050
+    Number of processor patches = 5
+    Number of processor faces = 12024
+    Number of boundary faces = 23274
+
+Number of processor faces = 90170
+Max number of cells = 185298 (0.0994433% above average 185114)
+Max number of processor patches = 8 (45.4545% above average 5.5)
+Max number of faces between processors = 18614 (23.8594% above average 15028.3)
+
+Written redistributed mesh to "constant"
+
+Writing (decompose) procAddressing files to constant/polyMesh
+End
+
+Finalising parallel run

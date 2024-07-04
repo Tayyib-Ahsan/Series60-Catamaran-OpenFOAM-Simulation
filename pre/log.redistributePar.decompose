@@ -1,0 +1,220 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _f8e05934-20230403 OPENFOAM=2212 patch=230110 version=2212
+Arch   : "LSB;label=32;scalar=64"
+Exec   : redistributePar -parallel -decompose
+Date   : Jul 02 2024
+Time   : 21:44:26
+Host   : DESKTOP-K8TIARQ
+PID    : 10527
+I/O    : uncollated
+Case   : /home/name/CarBattery/S60_M_0.30_New
+nProcs : 12
+Hosts  :
+(
+    (DESKTOP-K8TIARQ 12)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+sigFpe : Disabling floating point exception trapping
+Decomposing case (like decomposePar)
+
+--> FOAM Warning : 
+    From int main(int, char**)
+    in file redistributePar.C at line 1147
+    Working in -decompose or -reconstruct mode: automatically implies -overwrite
+
+No processor directories; switching on decompose mode
+
+Creating time directories on all processors
+
+Create time
+
+Create undecomposed database
+
+Setting time to that of master or undecomposed case : 0
+
+
+Decomposing mesh 
+
+Checking undecomposed mesh in case: "S60_M_0.30_New"
+    volume mesh [1] : "constant"
+    area   mesh [0] : "constant"
+
+
+Per processor availability of "faces" file in "constant/polyMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Per processor availability of "faceLabels" file in "constant/faMesh"
+    (0 0 0 0 0 0 0 0 0 0 0 0)
+
+Setting caseName to "S60_M_0.30_New" to read undecomposed mesh
+Restoring caseName
+Decomposition method hierarchical [12] (region region0)
+Setting caseName to "S60_M_0.30_New" to read decomposeParDict
+Restoring caseName
+From time 0 mesh:"constant/region0" have objects:0()
+After distribution:
+
+Processor 0
+    Number of cells = 76137
+    Number of faces shared with processor 1 = 1676
+    Number of faces shared with processor 2 = 3752
+    Number of faces shared with processor 4 = 3448
+    Number of processor patches = 3
+    Number of processor faces = 8876
+    Number of boundary faces = 1585
+
+Processor 1
+    Number of cells = 76083
+    Number of faces shared with processor 0 = 1676
+    Number of faces shared with processor 2 = 121
+    Number of faces shared with processor 3 = 3127
+    Number of faces shared with processor 4 = 96
+    Number of faces shared with processor 5 = 4034
+    Number of processor patches = 5
+    Number of processor faces = 9054
+    Number of boundary faces = 1266
+
+Processor 2
+    Number of cells = 76146
+    Number of faces shared with processor 0 = 3752
+    Number of faces shared with processor 1 = 121
+    Number of faces shared with processor 3 = 737
+    Number of faces shared with processor 4 = 484
+    Number of faces shared with processor 5 = 5
+    Number of faces shared with processor 6 = 4601
+    Number of processor patches = 6
+    Number of processor faces = 9700
+    Number of boundary faces = 3962
+
+Processor 3
+    Number of cells = 76116
+    Number of faces shared with processor 1 = 3127
+    Number of faces shared with processor 2 = 737
+    Number of faces shared with processor 5 = 200
+    Number of faces shared with processor 6 = 37
+    Number of faces shared with processor 7 = 4869
+    Number of processor patches = 5
+    Number of processor faces = 8970
+    Number of boundary faces = 3257
+
+Processor 4
+    Number of cells = 76115
+    Number of faces shared with processor 0 = 3448
+    Number of faces shared with processor 1 = 96
+    Number of faces shared with processor 2 = 484
+    Number of faces shared with processor 5 = 1169
+    Number of faces shared with processor 6 = 2613
+    Number of faces shared with processor 8 = 3517
+    Number of faces shared with processor 9 = 45
+    Number of faces shared with processor 10 = 500
+    Number of processor patches = 8
+    Number of processor faces = 11872
+    Number of boundary faces = 736
+
+Processor 5
+    Number of cells = 76109
+    Number of faces shared with processor 1 = 4034
+    Number of faces shared with processor 2 = 5
+    Number of faces shared with processor 3 = 200
+    Number of faces shared with processor 4 = 1169
+    Number of faces shared with processor 6 = 80
+    Number of faces shared with processor 7 = 2368
+    Number of faces shared with processor 9 = 4026
+    Number of faces shared with processor 10 = 15
+    Number of faces shared with processor 11 = 307
+    Number of processor patches = 9
+    Number of processor faces = 12204
+    Number of boundary faces = 510
+
+Processor 6
+    Number of cells = 76134
+    Number of faces shared with processor 2 = 4601
+    Number of faces shared with processor 3 = 37
+    Number of faces shared with processor 4 = 2613
+    Number of faces shared with processor 5 = 80
+    Number of faces shared with processor 7 = 568
+    Number of faces shared with processor 10 = 4642
+    Number of processor patches = 6
+    Number of processor faces = 12541
+    Number of boundary faces = 2548
+
+Processor 7
+    Number of cells = 76182
+    Number of faces shared with processor 3 = 4869
+    Number of faces shared with processor 5 = 2368
+    Number of faces shared with processor 6 = 568
+    Number of faces shared with processor 10 = 24
+    Number of faces shared with processor 11 = 4875
+    Number of processor patches = 5
+    Number of processor faces = 12704
+    Number of boundary faces = 2330
+
+Processor 8
+    Number of cells = 76157
+    Number of faces shared with processor 4 = 3517
+    Number of faces shared with processor 9 = 1705
+    Number of faces shared with processor 10 = 3704
+    Number of processor patches = 3
+    Number of processor faces = 8926
+    Number of boundary faces = 1552
+
+Processor 9
+    Number of cells = 76271
+    Number of faces shared with processor 4 = 45
+    Number of faces shared with processor 5 = 4026
+    Number of faces shared with processor 8 = 1705
+    Number of faces shared with processor 10 = 99
+    Number of faces shared with processor 11 = 3096
+    Number of processor patches = 5
+    Number of processor faces = 8971
+    Number of boundary faces = 1311
+
+Processor 10
+    Number of cells = 76183
+    Number of faces shared with processor 4 = 500
+    Number of faces shared with processor 5 = 15
+    Number of faces shared with processor 6 = 4642
+    Number of faces shared with processor 7 = 24
+    Number of faces shared with processor 8 = 3704
+    Number of faces shared with processor 9 = 99
+    Number of faces shared with processor 11 = 720
+    Number of processor patches = 7
+    Number of processor faces = 9704
+    Number of boundary faces = 3822
+
+Processor 11
+    Number of cells = 76110
+    Number of faces shared with processor 5 = 307
+    Number of faces shared with processor 7 = 4875
+    Number of faces shared with processor 9 = 3096
+    Number of faces shared with processor 10 = 720
+    Number of processor patches = 4
+    Number of processor faces = 8998
+    Number of boundary faces = 3174
+
+Number of processor faces = 61260
+Max number of cells = 76271 (0.165145% above average 76145.2)
+Max number of processor patches = 9 (63.6364% above average 5.5)
+Max number of faces between processors = 12704 (24.427% above average 10210)
+
+Written redistributed mesh to "constant"
+
+Writing (decompose) procAddressing files to constant/polyMesh
+End
+
+Finalising parallel run
