@@ -1,5 +1,5 @@
 # Series60-Catamaran-OpenFOAM-Simulation
-This repository showcases simulations from my research projects.
+This repository showcases a simulation from my research projects.
 
 This is a simulation for the Series60 catamaran 
 at Fn 0.30, s/L 0.388 and Fixed Trim condition.
